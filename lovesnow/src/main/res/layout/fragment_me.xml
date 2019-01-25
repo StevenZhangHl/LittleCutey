@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.hjq.bar.TitleBar
+            android:id="@+id/me_titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backButton="false"
+            app:lineVisible="false"
+            app:title="小可爱"
+            app:titleColor="@color/color_333" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/danmaku_view"
+            android:layout_margin="@dimen/margin_20"
+            app:cardCornerRadius="@dimen/margin_5"
+            app:contentPadding="@dimen/margin_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_12_666666"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:text="小可爱的生日：七月初八" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_12_666666"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="小可爱的星座：狮子座" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_12_666666"
+                    android:layout_gravity="center_horizontal"
+                    android:text="小可爱的鞋码：37" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_12_666666"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="小可爱最喜欢的肉肉：猪蹄，鸡爪" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_12_666666"
+                    android:layout_gravity="center_horizontal"
+                    android:text="小可爱最爱的水果：草莓，橙子，枣子" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    style="@style/text_12_666666"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/margin_5"
+                    android:text="小可爱最喜欢做的事：抓抓，抱抱，亲亲，举高高" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <master.flame.danmaku.ui.widget.DanmakuView
+            android:id="@+id/danmaku_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/me_titlebar" />
+
+        <com.steven.base.widget.TitanicTextView
+            android:id="@+id/titanic_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview_info"
+            android:gravity="center"
+            android:background="@color/color_f5"
+            android:text="I love you"
+            android:textColor="#212121"
+            android:textSize="@dimen/textSize_50" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_input_danku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/margin_50"
+            android:layout_marginBottom="@dimen/margin_50"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/et_danku"
+                style="@style/text_13_666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:background="@drawable/bg_edittext_shape"
+                android:hint="猜你想输入 我爱你老公"
+                android:padding="@dimen/margin_5" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/bt_send_danku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_52"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_send"
+            android:text="我也要发送" />
+    </RelativeLayout>
+</RelativeLayout>

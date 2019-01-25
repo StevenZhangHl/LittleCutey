@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="lovesnow_tab_items">
+        <item>首页</item>
+        <item>我的</item>
+    </array>
+    <array name="lovesnow_tab_icon_unselect">
+        <item>@mipmap/icon_home_normal</item>
+        <item>@mipmap/icon_me_normal</item>
+    </array>
+    <array name="lovesnow_tab_icon_select">
+        <item>@mipmap/icon_home_selected</item>
+        <item>@mipmap/icon_me_selected</item>
+    </array>
+</resources>
